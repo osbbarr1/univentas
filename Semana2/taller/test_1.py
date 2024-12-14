@@ -15,8 +15,8 @@ class Test_eis(unittest.TestCase):
 		print(urlGeneral)
 		self.browser.get(urlGeneral)
 		phone= self.browser.find_element(By.XPATH, "/html/body/div[2]/div/div/footer/div[1]/div/div[3]/div/div/div/div/ul/li[1]/p/b")
-		print(phone)
-		self.assertEqual(323 254 0629, phone)
+		print(phone.text)
+		self.assertEqual("323 254 0629", phone.text)
 
 
 	def tearDown(self):
