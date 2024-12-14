@@ -22,7 +22,7 @@ class eis_test(unittest.TestCase):
 			res = []
 			for number in numberList:
 				res.append(number.text)
-			self.assertEqual("2024", "2024")
+				self.assertEqual("2024", number.text)
 
 	def tearDown(self):
 		self.browser.quit()
