@@ -1,0 +1,14 @@
+name: hola mundo workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: saludar
+        run: echo "Hola mundo desde GitHub actions"
