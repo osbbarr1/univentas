@@ -22,7 +22,7 @@ class eis_test(unittest.TestCase):
 			res = []
 			for number in numberList:
 				res.append(number.text)
-			self.assertEqual(len(res), 3, msg='Fallo en el resultado de -> %s' % (url))
+			self.assertEqual(len(res), 4, msg='Fallo en el resultado de -> %s' % (url))
 
 	def tearDown(self):
 		self.browser.quit()
